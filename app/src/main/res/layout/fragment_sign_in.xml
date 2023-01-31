@@ -21,8 +21,9 @@
         style="@style/EditText.PopinsNormal14sp8D92A3"
         android:layout_marginTop="6dp"
         android:padding="10dp"
-        android:background="@drawable/shape_ractangle_outline_8_020202"
+        android:background="@drawable/shape_rectangle_outline_8_020202"
         android:hint="Type your email"
+        android:inputType="textEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -37,8 +38,9 @@
         style="@style/EditText.PopinsNormal14sp8D92A3"
         android:layout_marginTop="6dp"
         android:padding="10dp"
-        android:background="@drawable/shape_ractangle_outline_8_020202"
+        android:background="@drawable/shape_rectangle_outline_8_020202"
         android:hint="Type your password"
+        android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <Button

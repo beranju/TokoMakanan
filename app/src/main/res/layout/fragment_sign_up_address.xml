@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".ui.auth.signup.SignUpFragment">
+    tools:context=".ui.auth.signup.SignUpAddressFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,25 +16,19 @@
         android:paddingTop="26dp"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_gravity="center"
-            android:src="@drawable/ic_picture_empty"
-            android:layout_width="110dp"
-            android:layout_height="110dp"/>
-
         <TextView
             style="@style/TextView.PopinsNormal16sp020202"
             android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Full Name" />
+            android:text="Phone No" />
 
         <EditText
             style="@style/EditText.PopinsNormal14sp8D92A3"
             android:layout_marginTop="6dp"
             android:padding="10dp"
             android:background="@drawable/shape_rectangle_outline_8_020202"
-            android:hint="Type your full name"
+            android:hint="Type your phone number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -43,15 +37,14 @@
             android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Email Address" />
+            android:text="Address" />
 
         <EditText
             style="@style/EditText.PopinsNormal14sp8D92A3"
             android:layout_marginTop="6dp"
             android:padding="10dp"
             android:background="@drawable/shape_rectangle_outline_8_020202"
-            android:hint="Type your email"
-            android:inputType="textEmailAddress"
+            android:hint="Type your address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -60,20 +53,35 @@
             android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Password" />
+            android:text="House No" />
 
         <EditText
             style="@style/EditText.PopinsNormal14sp8D92A3"
             android:layout_marginTop="6dp"
             android:padding="10dp"
             android:background="@drawable/shape_rectangle_outline_8_020202"
-            android:hint="Type your password"
-            android:inputType="textPassword"
+            android:hint="Type your house number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/TextView.PopinsNormal16sp020202"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City" />
+
+        <EditText
+            style="@style/EditText.PopinsNormal14sp8D92A3"
+            android:layout_marginTop="6dp"
+            android:padding="10dp"
+            android:background="@drawable/shape_rectangle_outline_8_020202"
+            android:hint="Type your city"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <Button
             style="@style/Button.Primary"
-            android:text="Continue"
+            android:text="Sign Up Now"
             android:background="@drawable/shape_rectangle_8_ffc700"
             android:textAllCaps="false"
             android:layout_marginTop="24dp"
