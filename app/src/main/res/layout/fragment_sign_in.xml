@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:layout_marginTop="24dp"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="26dp"
+    android:orientation="vertical"
+    tools:context=".ui.auth.signin.SignInFragment">
+
+    <TextView
+        style="@style/TextView.PopinsNormal16sp020202"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Address" />
+    
+    <EditText
+        style="@style/EditText.PopinsNormal14sp8D92A3"
+        android:layout_marginTop="6dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_ractangle_outline_8_020202"
+        android:hint="Type your email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        style="@style/TextView.PopinsNormal16sp020202"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password" />
+
+    <EditText
+        style="@style/EditText.PopinsNormal14sp8D92A3"
+        android:layout_marginTop="6dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_ractangle_outline_8_020202"
+        android:hint="Type your password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        style="@style/Button.Primary"
+        android:text="Sign In"
+        android:background="@drawable/shape_rectangle_8_ffc700"
+        android:textAllCaps="false"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        style="@style/Button.Secondary"
+        android:text="Create New Account"
+        android:background="@drawable/shape_rectangle_8_8d92a3"
+        android:layout_marginTop="12dp"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
