@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import com.beranju.tokomakanan.MainActivity
 import com.beranju.tokomakanan.R
+import com.beranju.tokomakanan.ui.auth.AuthActivity
 
 class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +14,7 @@ class SplashScreen : AppCompatActivity() {
         setContentView(R.layout.activity_splash_screen)
 
         Handler().postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, AuthActivity::class.java))
         },3000L);
     }
 }
