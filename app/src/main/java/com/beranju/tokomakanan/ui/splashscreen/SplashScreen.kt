@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.beranju.tokomakanan.MainActivity
 import com.beranju.tokomakanan.R
 import com.beranju.tokomakanan.ui.auth.AuthActivity
 
@@ -15,6 +14,7 @@ class SplashScreen : AppCompatActivity() {
 
         Handler().postDelayed({
             startActivity(Intent(this, AuthActivity::class.java))
+            finish()
         },3000L);
     }
 }

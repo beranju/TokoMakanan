@@ -31,5 +31,13 @@
         android:name="com.beranju.tokomakanan.ui.auth.signup.SignUpAddressFragment"
         tools:layout="@layout/fragment_sign_up_address">
 
+        <action
+            android:id="@+id/action_FragmentSignUpAddress_to_signUpSuccessFragment"
+            app:destination="@id/signUpSuccessFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/signUpSuccessFragment"
+        android:name="com.beranju.tokomakanan.ui.auth.signup.SignUpSuccessFragment"
+        android:label="fragment_sign_up_success"
+        tools:layout="@layout/fragment_sign_up_success" />
 </navigation>

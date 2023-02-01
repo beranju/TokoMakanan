@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
+import com.beranju.tokomakanan.MainActivity
 import com.beranju.tokomakanan.R
 import com.beranju.tokomakanan.databinding.FragmentSignInBinding
 import com.beranju.tokomakanan.ui.auth.AuthActivity
@@ -25,6 +26,11 @@ class SignInFragment : Fragment(){
 //            toSignUp.putExtra("view", 2)
 //            startActivity(toSignUp)
 //        }
+        binding.btnSignIn.setOnClickListener {
+            startActivity(Intent(requireActivity(), MainActivity::class.java))
+            activity?.finish()
+        }
+
         binding.btnSignUp.setOnClickListener {
             findNavController().navigate(R.id.action_FragmentSignIn_to_FragmentSignUp)
         }
