@@ -44,6 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <Button
+        android:id="@+id/btnSignIn"
         style="@style/Button.Primary"
         android:text="Sign In"
         android:background="@drawable/shape_rectangle_8_ffc700"
@@ -52,6 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <Button
+        android:id="@+id/btnSignUp"
         style="@style/Button.Secondary"
         android:text="Create New Account"
         android:background="@drawable/shape_rectangle_8_8d92a3"

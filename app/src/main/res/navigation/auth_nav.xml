@@ -10,16 +10,25 @@
         android:name="com.beranju.tokomakanan.ui.auth.signin.SignInFragment"
         tools:layout="@layout/fragment_sign_in">
 
+        <action
+            android:id="@+id/action_FragmentSignIn_to_FragmentSignUp"
+            app:destination="@id/FragmentSignUp" />
+
     </fragment>
+
     <fragment
         android:id="@+id/FragmentSignUp"
-        android:name="com.beranju.tokomakanan.ui.auth.signin.SignInFragment"
+        android:name="com.beranju.tokomakanan.ui.auth.signup.SignUpFragment"
         tools:layout="@layout/fragment_sign_up">
+
+        <action
+            android:id="@+id/actionToSignUpAddress"
+            app:destination="@id/FragmentSignUpAddress"/>
 
     </fragment>
     <fragment
         android:id="@+id/FragmentSignUpAddress"
-        android:name="com.beranju.tokomakanan.ui.auth.signin.SignInFragment"
+        android:name="com.beranju.tokomakanan.ui.auth.signup.SignUpAddressFragment"
         tools:layout="@layout/fragment_sign_up_address">
 
     </fragment>

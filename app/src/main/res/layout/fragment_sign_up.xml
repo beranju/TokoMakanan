@@ -72,6 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <Button
+            android:id="@+id/btnContinueSignUpAddress"
             style="@style/Button.Primary"
             android:text="Continue"
             android:background="@drawable/shape_rectangle_8_ffc700"
