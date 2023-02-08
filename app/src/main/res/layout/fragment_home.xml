@@ -54,6 +54,12 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_horizontal"
         android:layout_marginTop="24dp"
+        tools:listitem="@layout/item_home_horizontal"
+        tools:itemCount="1"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingEnd="24dp"
+        android:background="#FFF"
         android:layout_width="match_parent"
         android:layout_height="222dp"/>
 

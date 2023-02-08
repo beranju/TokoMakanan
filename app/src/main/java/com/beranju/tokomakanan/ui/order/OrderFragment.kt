@@ -12,9 +12,6 @@ import com.beranju.tokomakanan.databinding.FragmentOrderBinding
 class OrderFragment : Fragment() {
 
     private var _binding: FragmentOrderBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -22,16 +19,8 @@ class OrderFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val orderViewModel =
-            ViewModelProvider(this).get(OrderViewModel::class.java)
-
         _binding = FragmentOrderBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-        val textView: TextView = binding.textNotifications
-        orderViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
     }
 
