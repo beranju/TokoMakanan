@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFF">
+
+    <TextView
+        android:id="@+id/tv_menuName"
+        style="@style/TextView.PopinsNormal14sp020202"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_weight="4"
+        android:layout_marginStart="16dp"
+        tools:text="Menu 1" />
+
+    <ImageView
+        android:id="@+id/iv_btnMove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/ini_icon_ok"
+        android:src="@drawable/ic_arrow_right_8d92a3"/>
+
+</LinearLayout>

@@ -9,4 +9,7 @@
     <string name="tab_new_taste">New Taste</string>
     <string name="tab_populer">Popular</string>
     <string name="tab_recommended">Recommended</string>
+    <string name="tab_account">Account</string>
+    <string name="tab_foodmarket">FoodMarket</string>
+    <string name="ini_icon_ok">Ini Icon Ok</string>
 </resources>
