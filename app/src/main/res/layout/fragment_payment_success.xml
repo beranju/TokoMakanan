@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="100dp"
+    android:orientation="vertical"
+    tools:context=".ui.detail.PaymentSuccessFragment">
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="200dp"
+        android:layout_height="201dp"
+        android:src="@drawable/ic_success_order"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TextView.PopinsNormal20sp020202"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="You've made order"/>
+
+    <TextView
+        android:id="@+id/tv_subTitle"
+        style="@style/TextView.PopinsNormal14sp8D92A3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textAlignment="center"
+        android:text="Just stay at home while we are \npreparing your best foods"/>
+    
+    <Button
+        android:id="@+id/btn_other_food"
+        style="@style/Button.Primary"
+        android:layout_width="200dp"
+        android:background="@drawable/shape_rectangle_8_ffc700"
+        android:text="Order Other Foods"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_view_order"
+        style="@style/Button.Secondary"
+        android:layout_width="200dp"
+        android:background="@drawable/shape_rectangle_8_8d92a3"
+        android:text="View My Order"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
