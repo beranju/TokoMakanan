@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager2.widget.ViewPager2
 import com.beranju.tokomakanan.R
@@ -37,7 +38,7 @@ class HomeFragment : Fragment() {
 
         foodList.addAll(foodListDummy)
         val homeAdapter = HomeAdapter(foodList){
-            Toast.makeText(requireContext(), "${it.title} clicked", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_navigation_home_to_detailFragment)
         }
         binding.rvHorizontal.apply {
             layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
