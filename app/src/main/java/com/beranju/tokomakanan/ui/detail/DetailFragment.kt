@@ -19,6 +19,10 @@ class DetailFragment : Fragment() {
         binding?.ivBack?.setOnClickListener {
             findNavController().popBackStack()
         }
+
+        binding?.btnOrderNow?.setOnClickListener {
+            findNavController().navigate(R.id.action_detailFragment_to_paymentFragment)
+        }
     }
 
     override fun onCreateView(

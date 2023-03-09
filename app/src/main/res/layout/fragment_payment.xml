@@ -10,6 +10,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:subtitle="You deserve better meal"
+            app:subtitleTextAppearance="@style/TextView.PopinsNormal14sp8D92A3"
+            app:title="Payment"
+            app:titleTextAppearance="@style/TextView.PopinsNormal22sp020202" />
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl"
             android:layout_width="match_parent"
@@ -18,16 +35,16 @@
             android:background="@drawable/shape_rectangle_8_fff"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
             <TextView
                 android:id="@+id/textView7"
                 style="@style/TextView.PopinsNormal14sp020202"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Item Ordered"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="16dp"
+                android:text="Item Ordered"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -78,8 +95,8 @@
                 style="@style/TextView.PopinsNormal14sp020202"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Details Transaction"
                 android:layout_marginTop="16dp"
+                android:text="Details Transaction"
                 app:layout_constraintStart_toStartOf="@+id/iv_thumbnail"
                 app:layout_constraintTop_toBottomOf="@+id/iv_thumbnail" />
 
@@ -110,9 +127,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
+                android:text="Driver"
                 app:layout_constraintStart_toStartOf="@+id/tv_title_detail"
-                app:layout_constraintTop_toBottomOf="@id/tv_title_detail"
-                android:text="Driver" />
+                app:layout_constraintTop_toBottomOf="@id/tv_title_detail" />
 
             <TextView
                 android:id="@+id/tv_driver_price"
@@ -131,9 +148,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
+                android:text="Tax 10%"
                 app:layout_constraintStart_toStartOf="@+id/textView11"
-                app:layout_constraintTop_toBottomOf="@id/textView11"
-                android:text="Tax 10%" />
+                app:layout_constraintTop_toBottomOf="@id/textView11" />
 
             <TextView
                 android:id="@+id/tv_tax_cost"
@@ -153,10 +170,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:layout_marginBottom="16dp"
+                android:text="total price"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/textView12"
-                app:layout_constraintTop_toBottomOf="@id/textView12"
-                android:text="total price" />
+                app:layout_constraintTop_toBottomOf="@id/textView12" />
 
             <TextView
                 android:id="@+id/tv_total_price"
@@ -305,7 +322,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:layout_marginBottom="26dp"
+            android:layout_marginBottom="60dp"
             android:layout_marginHorizontal="24dp"
             android:background="@drawable/shape_rectangle_8_ffc700"
             android:text="Checkout Now"
